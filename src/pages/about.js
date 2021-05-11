@@ -12,8 +12,6 @@ const divStyles = {
 }
 
 const imgStyles = {
-  width: "auto",
-  height: "auto",
   border: "10px solid black",
   borderRadius: "10px",
 }
@@ -25,7 +23,7 @@ const About = () => (
       <h1 className="heading">About Us</h1>
 
       <div style={divStyles}>
-        <Container>
+        <Container fluid>
           <Row>
             <Col md={{ span: 4, offset: 2 }}>
               <p>The name of our organization is an emblem of our collective goal to help young students grow.</p>
@@ -37,8 +35,8 @@ const About = () => (
                 We are a small team of students working together to better students one lesson at a time.
               </p>
             </Col>
-            <Col md={{ span: 6, offset: 0 }}>
-              <img src={image1} style={imgStyles} alt="Yanhua chinese character"/>
+            <Col >
+              <img src={image1} className="img-fluid" style={imgStyles} alt="Yanhua chinese character"/>
             </Col>
           </Row>
         </Container>
